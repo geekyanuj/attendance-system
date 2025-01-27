@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -185,17 +186,20 @@
                                 </HBox>
                                 <HBox alignment="CENTER" prefHeight="49.0" prefWidth="297.0">
                                     <children>
-                                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="49.0" prefWidth="49.0" scaleShape="false">
+                                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#prevDate" prefHeight="49.0" prefWidth="49.0" scaleShape="false" styleClass="next-prevBtn">
                                             <graphic>
-                                                <ImageView fitHeight="38.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fitHeight="38.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
                                                         <Image url="@img/leftArrow.png" />
                                                     </image>
                                                 </ImageView>
                                             </graphic>
                                         </JFXButton>
-                                        <JFXDatePicker fx:id="datepicker" defaultColor="BLACK" prefHeight="41.0" prefWidth="123.0" />
-                                        <JFXButton contentDisplay="GRAPHIC_ONLY">
+                                        <JFXDatePicker fx:id="datepicker" defaultColor="#7c6f6f" prefHeight="41.0" prefWidth="123.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></JFXDatePicker>
+                                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#nextDate" styleClass="next-prevBtn">
                                             <graphic>
                                                 <ImageView fitHeight="38.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>

@@ -128,9 +128,6 @@ public class HomeController implements Initializable {
     void loadFilterPresent(){
         filterComboBtn.getItems().addAll("Present","Absent","Leave");
     }
-    
-    
-    
     void loadDatePicker(){
         
         
@@ -147,6 +144,19 @@ public class HomeController implements Initializable {
                 }
             }
         });
+    }
+
+    @FXML
+    private void prevDate(ActionEvent event) {
+        datepicker.setValue(datepicker.getValue().minusDays(1));
+    }
+
+    @FXML
+    private void nextDate(ActionEvent event) {
+        if(!datepicker.getValue().equals(LocalDate.now())){
+            datepicker.setValue(datepicker.getValue().plusDays(1));
+        }
+        
     }
 
 
