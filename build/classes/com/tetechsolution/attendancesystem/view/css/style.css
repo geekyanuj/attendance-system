@@ -1,0 +1,92 @@
+.bg{
+    -fx-background-image : url('../img/bg.jpg'); 
+   /*-fx-background-color : #ffdaab;*/
+    -fx-background-size : cover;
+}
+
+.nav-button {
+  -fx-background-color: #5ca1e1; /* background-color */
+  -fx-background-radius: 6px; /* border-radius */
+  -fx-border-width: 0; /* border */
+  -fx-border-color: transparent; /* border color */
+  -fx-cursor: hand; /* cursor pointer */
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0, 0, 10); /* box-shadow */
+  -fx-transition: all 0.5s; /* transition (JavaFX doesn’t directly support this, it’s mostly handled in code) */
+}
+
+
+.nav-button:hover {
+  -fx-padding-right: 24px;  /* This expands the padding when hovered */
+  -fx-padding-left: 80px;    /* This shrinks the left padding on hover */
+  -fx-background-color : #0A3D62;
+}
+
+.comboBtn{
+    -fx-background-color: #fff; /* Background color when hovered */
+    -fx-border-color: gray;
+    /*-fx-bar-gap: 11px;*/
+}
+
+.comboBtn:hover {
+    -fx-background-color: #2980b9; /* Background color when hovered */
+    -fx-scale-x: 1.1;               /* Slightly scale the button horizontally */
+    -fx-scale-y: 1.1;               /* Slightly scale the button vertically */
+    -fx-cursor: hand;               /* Change the cursor to a hand when hovering */
+}
+
+.btn {
+    -fx-background-color : #FFF;
+    -fx-border-color : #000;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px; 
+   }
+
+.btn:hover {
+    -fx-background-color : wheat;
+    -fx-color : #FFF;
+    -fx-font-weight :600;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px; 
+    -fx-padding: 7 7 7 7;
+    -fx-box-shadow: 0px 0px 20px -18px;
+}
+
+/* Set the background of the date picker to white */
+.jfx-date-picker {
+    -fx-background-color: #FFF;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -jfx-focus-color: transparent; 
+    -jfx-unfocus-color: transparent; 
+    -fx-padding: 5; 
+    -fx-color:blue;
+}
+.jfx-datepicker .jfx-underline {
+    -fx-stroke-width: 0 !important;
+    -fx-opacity: 0 !important;
+    -fx-fill: transparent !important;
+}
+
+.dateNavBtn{
+    -fx-border-radius:3px;
+    -fx-background-radius:3px;
+    -fx-background-color : transparent;
+}
+.dateNavBtn:pressed{
+    -fx-background-color : #999999;
+    -fx-background-radius:3px;
+}
+.dateNavBtnLeft{
+    -fx-background-image : url('../img/leftArrow.png'); 
+    -fx-background-size : cover;
+    -fx-background-repeat: no-repeat;
+}
+.dateNavBtnRight{
+    -fx-background-image : url('../img/rightArrow.png'); 
+    -fx-background-size : cover;
+    -fx-background-repeat: no-repeat;
+}
+.material-icon {
+    -fx-font-family: "Material Icons";
+    -fx-font-size: 20px;
+}

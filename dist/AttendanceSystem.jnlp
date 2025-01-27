@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AttendanceSystem.jnlp">
+  <information>
+    <title>AttendanceSystem</title>
+    <vendor>anujv</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AttendanceSystem.jar" size="9062561" download="eager" />
+    <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />
+    <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
+    <jar href="lib\fontawesomefx-controls-8.15.jar" size="3369" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-1.3.0.jar" size="68461" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\materialfx-11.13.5-all.jar" size="3300877" download="eager" />
+    <jar href="lib\mysql-connector-j-8.0.31-jar.jar" size="2515447" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.tetechsolution.attendancesystem.main.AttendanceSystem"  name="AttendanceSystem" />
+  <update check="always"/>
+</jnlp>
