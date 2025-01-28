@@ -232,6 +232,14 @@
                                     <Insets left="5.0" right="5.0" />
                                  </HBox.margin>
                               </MenuButton>
+                              <ComboBox fx:id="activityComboBtn" prefHeight="44.0" prefWidth="120.0" promptText="ACTIVITY" styleClass="comboBtn" visibleRowCount="3">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="4.0" />
+                                 </padding>
+                              </ComboBox>
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="73.0" prefWidth="378.0">
@@ -262,7 +270,7 @@
                                 </Label>
                                 <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="973.0">
                                     <children>
-                                        <ComboBox prefHeight="31.0" prefWidth="97.0" promptText="Export" style="-fx-background-color: #fff;" visibleRowCount="0">
+                                        <ComboBox fx:id="exportCB" prefHeight="31.0" prefWidth="97.0" promptText="Export" style="-fx-background-color: #fff;" visibleRowCount="2">
                                             <HBox.margin>
                                                 <Insets right="5.0" />
                                             </HBox.margin>

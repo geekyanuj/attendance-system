@@ -13,17 +13,27 @@ public class EntryData {
     private String inTime;
     private String outTime;
     private String middayleave;
+    private String status;
 
     public EntryData() {
     }
 
     
-    public EntryData(int id, String name, String inTime, String outTime, String middayleave) {
+    public EntryData(int id, String name, String inTime, String outTime, String middayleave,String status) {
         this.id = id;
         this.name = name;
         this.inTime = inTime;
         this.outTime = outTime;
         this.middayleave = middayleave;
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public int getId() {
